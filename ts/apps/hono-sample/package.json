@@ -1,0 +1,8 @@
+{
+    "name": "@gnome/hono-sample",
+    "private": true,
+    "version": "0.0.0",
+    "dependencies": {
+        
+    }
+}

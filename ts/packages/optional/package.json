@@ -1,0 +1,30 @@
+{
+    "name": "@gnome/optional",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest"
+    },
+    "exports": {
+        ".": {
+            "import": "./esm/mod.js",
+            "types": "./types/mod.d.ts"
+        },
+        "./optional": {
+            "import": "./esm/optional.js",
+            "types": "./types/optional.d.ts"
+        },
+        "./result": {
+            "import": "./esm/result.js",
+            "types": "./types/result.d.ts"
+        },
+        "./lazy": {
+            "import": "./esm/lazy.js",
+            "types": "./types/lazy.d.ts"
+        }
+    },
+    "dependencies": {
+        "@gnome/errors": "workspace:*"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "target": "ES2023",
+    "module": "Node16",
+    "moduleDetection": "force",
+    "moduleResolution": "Node16",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "declarationDir": "./esm",
+    "declaration": true,
+
+    /* Linting */
+    "skipLibCheck": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "esm",
+  },
+  "exclude": ["**/*_test.ts", "./esm", "./eng"],
+}

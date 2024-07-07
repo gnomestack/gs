@@ -1,0 +1,102 @@
+{
+    "name": "@gnome/errors",
+    "version": "0.0.0",
+    "description": "Error handling for Gnome",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest",
+        "update": "bun run ./eng/update.ts"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "exports": {
+        ".": {
+            "import": "./esm/mod.js",
+            "types": "./esm/mod.d.ts"
+        },
+        "./print-error": {
+            "import": "./esm/print_error.js",
+            "types": "./esm/print_error.d.ts"
+        },
+        "./argument-empty-error": {
+            "import": "./esm/argument_empty_error.js",
+            "types": "./esm/argument_empty_error.d.ts"
+        },
+        "./timeout-error": {
+            "import": "./esm/timeout_error.js",
+            "types": "./esm/timeout_error.d.ts"
+        },
+        "./errorf": {
+            "import": "./esm/errorf.js",
+            "types": "./esm/errorf.d.ts"
+        },
+        "./not-implemented-error": {
+            "import": "./esm/not_implemented_error.js",
+            "types": "./esm/not_implemented_error.d.ts"
+        },
+        "./argument-null-error": {
+            "import": "./esm/argument_null_error.js",
+            "types": "./esm/argument_null_error.d.ts"
+        },
+        "./invalid-operation-error": {
+            "import": "./esm/invalid_operation_error.js",
+            "types": "./esm/invalid_operation_error.d.ts"
+        },
+        "./not-supported-error": {
+            "import": "./esm/not_supported_error.js",
+            "types": "./esm/not_supported_error.d.ts"
+        },
+        "./null-reference-error": {
+            "import": "./esm/null_reference_error.js",
+            "types": "./esm/null_reference_error.d.ts"
+        },
+
+        "./argument-error": {
+            "import": "./esm/argument_error.js",
+            "types": "./esm/argument_error.d.ts"
+        },
+        "./format-error": {
+            "import": "./esm/format_error.js",
+            "types": "./esm/format_error.d.ts"
+        },
+        "./system-error": {
+            "import": "./esm/system_error.js",
+            "types": "./esm/system_error.d.ts"
+        },
+        "./assertion-error": {
+            "import": "./esm/assertion_error.js",
+            "types": "./esm/assertion_error.d.ts"
+        },
+        "./argument-range-error": {
+            "import": "./esm/argument_range_error.js",
+            "types": "./esm/argument_range_error.d.ts"
+        },
+        "./walk-error": {
+            "import": "./esm/walk_error.js",
+            "types": "./esm/walk_error.d.ts"
+        },
+        "./abort-error": {
+            "import": "./esm/abort_error.js",
+            "types": "./esm/abort_error.d.ts"
+        },
+        "./object-disposed-error": {
+            "import": "./esm/object_disposed_error.js",
+            "types": "./esm/object_disposed_error.d.ts"
+        },
+        "./collect-errors": {
+            "import": "./esm/collect_errors.js",
+            "types": "./esm/collect_errors.d.ts"
+        },
+        "./argument-whitespace-error": {
+            "import": "./esm/argument_whitespace_error.js",
+            "types": "./esm/argument_whitespace_error.d.ts"
+        },
+        "./invalid-cast-error": {
+            "import": "./esm/invalid_cast_error.js",
+            "types": "./esm/invalid_cast_error.d.ts"
+        }
+    }
+}

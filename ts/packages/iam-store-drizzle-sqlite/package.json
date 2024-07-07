@@ -1,0 +1,40 @@
+{
+  "name": "@gnome/iam-store-drizzle-sqlite",
+  "version": "0.0.0",
+  "description": "Drizzle SQLite store for IAM",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./schema": {
+      "import": "./esm/schema/mod.js",
+      "types": "./esm/schema/mod.d.ts"
+    },
+    "./schema/orgs": {
+      "import": "./esm/schema/orgs.js",
+      "types": "./esm/schema/orgs.d.ts"
+    },
+    "./schema/users": {
+      "import": "./esm/schema/users.js",
+      "types": "./esm/schema/users.d.ts"
+    },
+    "./schema/roles": {
+      "import": "./esm/schema/roles.js",
+      "types": "./esm/schema/roles.d.ts"
+    },
+    "./schema/auth": {
+      "import": "./esm/schema/auth.js",
+      "types": "./esm/schema/auth.d.ts"
+    },
+    ".//schema/api-keys": {
+      "import": "./esm/schema/api_keys.js",
+      "types": "./esm/schema/api_keys.d.ts"
+    }
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.31.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
